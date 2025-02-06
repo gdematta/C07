@@ -22,7 +22,7 @@ public class Jellyfish extends GamePiece {
 		// If the player has been in range for one turn, mark the flag true
 		} else if (Math.abs(playerLocation - this.getLocation()) < 2) {
 			Active = true;
-			System.out.println("You feel like you might get stung..."); // Tell the player they will take damage next turn if they are still in range
+			System.out.println("\nYou feel like you might get stung...\n"); // Tell the player they will take damage next turn if they are still in range
 			return InteractionResult.NONE;
 		// Clear the flag if the player leaves the range
 		} else {

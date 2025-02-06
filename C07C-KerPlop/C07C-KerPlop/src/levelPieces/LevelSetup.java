@@ -26,8 +26,8 @@ public class LevelSetup {
 			gamePieces.add(new Coin('*', "Coin", 8));
 			level[8] = gamePieces.get(0);
 			
-			gamePieces.add(new Jellyfish('J', "Jelly", 16));
-			level[16] = gamePieces.get(1);
+			gamePieces.add(new Jellyfish('J', "Jelly", 20));
+			level[20] = gamePieces.get(1);
 			
 			gamePieces.add(new SeaMine('M', "Mine", 4));
 			level[4] = gamePieces.get(2);
@@ -38,6 +38,15 @@ public class LevelSetup {
 			
 			gamePieces.add(new Whirlpool('@', "Whirlpool", 11));
 			level[11] = gamePieces.get(4);
+			
+			gamePieces.add(new TreasureChest('$', "TreasureChest", 13));
+			level[13] = gamePieces.get(5);
+			
+			Shark shark1 = new Shark('^', "Shark", 16);
+			//gamePieces.add(shark1);
+			movingPieces.add(shark1);
+			level[16] = shark1;
+			
 			playerStart = 0;
 			//add game pieces
 			
@@ -48,6 +57,11 @@ public class LevelSetup {
 			this.movingPieces = new ArrayList<Moveable>();
 			this.gamePieces = new ArrayList<GamePiece>();
 			//Player starting position
+			gamePieces.add(new Whirlpool('@', "Whirlpool", 1));
+			level[1] = gamePieces.get(0);
+			
+			gamePieces.add(new Whirlpool('@', "Whirlpool", 11));
+			level[11] = gamePieces.get(1);
 			playerStart = 0;
 			//add game pieces
 		}

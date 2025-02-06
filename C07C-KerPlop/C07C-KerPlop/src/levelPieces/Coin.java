@@ -3,6 +3,8 @@ package levelPieces;
 import gameEngine.Drawable;
 import gameEngine.InteractionResult;
 
+//Coins give a point if the player lands on it 
+
 public class Coin extends GamePiece {
 	
 	// Flag to mark if the coin has been collected

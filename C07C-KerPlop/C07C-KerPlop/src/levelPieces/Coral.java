@@ -1,7 +1,7 @@
 package levelPieces;
 import gameEngine.Drawable;
 
-// Coral does nothing and does not interact with the player
+// Coral does not move and does not interact with the player
 
 public class Coral implements Drawable {
 	
