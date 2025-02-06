@@ -177,7 +177,7 @@ public class Player implements Drawable {
 	 *               user
 	 * @return true if the option is valid (within bounds), false otherwise
 	 */
-	private boolean updatePlayerLocation(int option) {
+	public boolean updatePlayerLocation(int option) {
 		int newLocation = -1;
 		if (option == 1 && location > 0) {
 			newLocation = location - 1;
@@ -190,6 +190,12 @@ public class Player implements Drawable {
 		}
 		else if (option == 4 && location < (GameEngine.BOARD_SIZE - 2)) {
 			newLocation = location + 2;
+		} 
+		else if (option == 5) {
+			newLocation = location + 10;
+		}
+		else if (option == 6) {
+			newLocation = location - 10;
 		}
 		if (newLocation == -1) {
 			System.out.println("Invalid option, please retry");

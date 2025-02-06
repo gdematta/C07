@@ -180,11 +180,23 @@ public class GameEngine {
 	 */
 	public void interaction() {
 		for (GamePiece piece : interactingPieces) {
+			
 			InteractionResult result = piece.interact(gameBoard, player.getLocation());
 			if (result == InteractionResult.GET_POINT) {
 				player.addPoint();
 				System.out.println("\nYou just won a prize!\n");
 			}
+			
+			if (result == InteractionResult.WARPBACK) {
+				System.out.println("\nYou jumped between whirlpools!\n");
+				player.updatePlayerLocation(6);
+			}
+			
+			if (result == InteractionResult.WARPF) {
+				System.out.println("\nYou jumped between whirlpools!\n");
+				player.updatePlayerLocation(5);
+			} 
+			
 			if (result == InteractionResult.HIT) {
 				player.takeDamage();
 				System.out.println("\nYou just took a hit!\n");
@@ -194,6 +206,7 @@ public class GameEngine {
 					break;
 				}
 			}
+
 			if (result == InteractionResult.KILL) {
 				player.killed();
 				System.out.println("\nKerPolp! Something just killed you!\n");
