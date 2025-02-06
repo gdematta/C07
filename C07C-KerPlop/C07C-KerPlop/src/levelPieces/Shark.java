@@ -1,6 +1,7 @@
 package levelPieces;
 
 import gameEngine.Drawable;
+import gameEngine.GameEngine;
 import gameEngine.Moveable;
 import gameEngine.InteractionResult;
 
@@ -17,22 +18,25 @@ public class Shark extends GamePiece implements Moveable {
 	
 	public void move(Drawable[] gameBoard, int playerLocation) {
 		
-		if (direction == 0 && (this.getLocation() + 2) < gameBoard.length) {
+		if (direction == 0 && (this.getLocation() + 2) < GameEngine.BOARD_SIZE) {
 			this.setLocation(this.getLocation() + 2);
-		} else if (direction == 0 && ((this.getLocation() + 2) == (gameBoard.length -1))) {
-			this.setLocation(this.getLocation() + 1);
-		} else if (direction == 0 && ((this.getLocation() + 2) == gameBoard.length)) {
-				direction = 1;
-				this.setLocation(this.getLocation() -2);	
-		} else if (direction == 1 && (this.getLocation() - 2) < 0) {
+		} else if (direction == 0 && ((this.getLocation() + 2) == (GameEngine.BOARD_SIZE - 1))) {
+			this.setLocation(this.getLocation() + 2);
+			this.direction = 0;
+		} else if (direction == 0 && ((this.getLocation() + 2) >= GameEngine.BOARD_SIZE)) {
+			direction = 1;
 			this.setLocation(this.getLocation() - 2);
-		} else if (direction == 1 && ((this.getLocation() - 2) == 1)) {
-			this.setLocation(this.getLocation() - 1);
-			direction = 0;
+			
+		} else if (direction == 1 && (this.getLocation() - 2) > 0) {
+			this.setLocation(this.getLocation() - 2);
 		} else if (direction == 1 && ((this.getLocation() - 2) == 0)) {
+			this.setLocation(this.getLocation() - 2);
+			direction = 0;
+		} else if (direction == 1 && ((this.getLocation() - 2) < 0)) {
 			direction = 0;
 			this.setLocation(this.getLocation() + 2);
 		}
+		System.out.println(this.getLocation());
 	}
 	
 	public InteractionResult interact(Drawable [] gameBoard, int playerLocation) {
