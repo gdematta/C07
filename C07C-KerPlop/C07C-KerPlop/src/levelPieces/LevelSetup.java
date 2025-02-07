@@ -31,21 +31,26 @@ public class LevelSetup {
 			
 			gamePieces.add(new SeaMine('M', "Mine", 4));
 			level[4] = gamePieces.get(2);
-			
-			// Only 2 Whirlpools.
-			gamePieces.add(new Whirlpool('@', "Whirlpool", 1));
-			level[1] = gamePieces.get(3);
-			
-			gamePieces.add(new Whirlpool('@', "Whirlpool", 11));
-			level[11] = gamePieces.get(4);
-			
-			gamePieces.add(new TreasureChest('$', "TreasureChest", 13));
-			level[13] = gamePieces.get(5);
+//			
+//			// Only 2 Whirlpools.
+//			gamePieces.add(new Whirlpool('@', "Whirlpool", 1));
+//			level[1] = gamePieces.get(3);
+//			
+//			gamePieces.add(new Whirlpool('@', "Whirlpool", 11));
+//			level[11] = gamePieces.get(4);
+//			
+//			gamePieces.add(new TreasureChest('$', "TreasureChest", 13));
+//			level[13] = gamePieces.get(5);
 			
 			Shark shark1 = new Shark('^', "Shark", 16);
-			//gamePieces.add(shark1);
+			gamePieces.add(shark1);
 			movingPieces.add(shark1);
 			level[16] = shark1;
+			
+			Fish fish1 = new Fish('<', "Fish", 7);
+			gamePieces.add(fish1);
+			movingPieces.add(fish1);
+			level[7] = fish1;
 			
 			playerStart = 0;
 			//add game pieces
