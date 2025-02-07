@@ -8,8 +8,7 @@ import gameEngine.Moveable;
 import gameEngine.InteractionResult;
 
 public class Fish extends GamePiece implements Moveable {
-	
-	// Constructor for Fish
+// Constructor for Fish
 	public Fish(char symbol, String label, int location) {
 		super(symbol, label, location);
 	}
@@ -30,4 +29,5 @@ public class Fish extends GamePiece implements Moveable {
 		// Fish don't interact with the player
 		return InteractionResult.NONE;
 	}
+
 }

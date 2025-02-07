@@ -56,7 +56,7 @@ public class LevelSetup {
 			gamePieces.add(fish1);
 			movingPieces.add(fish1);
 			level[7] = fish1;
-			
+		
 			gamePieces.add(new Coin('0', "Coin", 13 ));
 			level[13] = gamePieces.get(0);
 			
