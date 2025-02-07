@@ -96,6 +96,22 @@ public class GameEngine {
 		System.out.println("The object of the game is to capture prizes without being killed.");
 		System.out.println("You need " + Player.POINTS_TO_ADVANCE + 
 				" points to advance, you die after " + Player.POINTS_TO_DIE + " hits.") ;
+		System.out.println("Player P // You are here!");
+		System.out.println("Coin 0 // Coins give a point if the player lands on it. Collect 2 points to advance to the next level");
+		System.out.println("Treasure Chest $ // Treasure Chests advance the player to the next level if they land on it");
+		System.out.println("Jellyfish J // Jellyfish will sting the player for 1 hit if they are on top or beside it after 1 turn has passed");
+		System.out.println("Coral C // Coral does not move and does not interact with the player");
+		System.out.println("Sea Mine * // Sea Mines will kill a player that lands on top of it");
+		System.out.println("Fish < // Fish move randomly across the board and does not interact with the player");
+		System.out.println("Shark ^ // Sharks will damage the player if they are beside it. Sharks move 2 spaces at a time back and forth between game pieces. Sharks can't see or damage you when you're on top of them!"
+				+ "");
+		System.out.println("Whirlpool @ // Whirlpools will teleport the player to the other whirlpool, which are a always 12 spaces apart. There can only be 2 of them on the map)\"\r\n"
+				+ "");
+
+
+
+
+
 	}
 	
 

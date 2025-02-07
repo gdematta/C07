@@ -22,25 +22,26 @@ public class LevelSetup {
 			gamePieces = new ArrayList<GamePiece>();
 			
 			level[3] = new Coral('C', "Coral", 3);
+			level[15] = new Coral('C', "Coral", 15);
 			
 			gamePieces.add(new Coin('*', "Coin", 8));
 			level[8] = gamePieces.get(0);
 			
-			gamePieces.add(new Jellyfish('J', "Jelly", 20));
-			level[20] = gamePieces.get(1);
+			gamePieces.add(new Jellyfish('J', "Jelly", 19));
+			level[19] = gamePieces.get(1);
 			
 			gamePieces.add(new SeaMine('M', "Mine", 4));
 			level[4] = gamePieces.get(2);
-//			
-//			// Only 2 Whirlpools.
-//			gamePieces.add(new Whirlpool('@', "Whirlpool", 1));
-//			level[1] = gamePieces.get(3);
-//			
-//			gamePieces.add(new Whirlpool('@', "Whirlpool", 11));
-//			level[11] = gamePieces.get(4);
-//			
-//			gamePieces.add(new TreasureChest('$', "TreasureChest", 13));
-//			level[13] = gamePieces.get(5);
+			
+			// Only 2 Whirlpools.
+			gamePieces.add(new Whirlpool('@', "Whirlpool", 1));
+			level[1] = gamePieces.get(3);
+			
+			gamePieces.add(new Whirlpool('@', "Whirlpool", 11));
+			level[11] = gamePieces.get(4);
+			
+			gamePieces.add(new TreasureChest('$', "TreasureChest", 20));
+			level[20] = gamePieces.get(5);
 			
 			Shark shark1 = new Shark('^', "Shark", 16);
 			gamePieces.add(shark1);

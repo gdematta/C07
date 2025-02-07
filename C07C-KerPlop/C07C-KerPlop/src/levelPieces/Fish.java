@@ -18,7 +18,7 @@ public class Fish extends GamePiece implements Moveable {
 		int init = this.getLocation();
 		Random random = new Random();
 		int randomNumber = random.nextInt(4 + 4) - 4 + this.getLocation();
-		if (gameBoard[randomNumber] == null && randomNumber >= 0 && randomNumber < GameEngine.BOARD_SIZE) {
+		if ((randomNumber >= 0) && (randomNumber < GameEngine.BOARD_SIZE) && gameBoard[randomNumber] == null) {
 			this.setLocation(randomNumber);
 			gameBoard[randomNumber] = this;
 			gameBoard[init] = null;
