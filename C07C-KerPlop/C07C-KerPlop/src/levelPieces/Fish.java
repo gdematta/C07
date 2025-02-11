@@ -16,13 +16,12 @@ public class Fish extends GamePiece implements Moveable {
 	public void move(Drawable[] gameBoard, int playerLocation) {
 		int init = this.getLocation();
 		Random random = new Random();
-		int randomNumber = random.nextInt(4 + 4) - 4 + this.getLocation();
+		int randomNumber = random.nextInt(21);
 		if ((randomNumber >= 0) && (randomNumber < GameEngine.BOARD_SIZE) && gameBoard[randomNumber] == null) {
 			this.setLocation(randomNumber);
 			gameBoard[randomNumber] = this;
 			gameBoard[init] = null;
 		}
-
 	}
 	
 	public InteractionResult interact(Drawable [] gameBoard, int playerLocation) {

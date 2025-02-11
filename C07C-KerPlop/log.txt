@@ -1,0 +1,93 @@
+commit 1db213c5dfbce230879c06fc8ccc364bc3a31b9f
+Merge: 9f74f9d a75946a
+Author: gdematta <gdematta@mines.edu>
+Date:   Thu Feb 6 19:35:55 2025 -0700
+
+    Updated Level Setup
+
+commit 9f74f9d49f7f0231f3bf61ec770ec0673626496f
+Author: gdematta <gdematta@mines.edu>
+Date:   Thu Feb 6 19:29:36 2025 -0700
+
+    Final Commit
+
+commit a75946adb427d421ea2d94653a673fd3d8a60c94
+Merge: b1a8a9e c485220
+Author: gdematta <gdematta@mines.edu>
+Date:   Thu Feb 6 18:40:33 2025 -0700
+
+    Merge branch 'master' of https://github.com/gdematta/C07
+
+commit b1a8a9e27b73974b211835497ed7a2280822bfa3
+Author: gdematta <gdematta@mines.edu>
+Date:   Thu Feb 6 18:38:11 2025 -0700
+
+    updated moving pieces and description
+
+commit 8e4b24033903cee18247e2d7d7fc60ec219a79fd
+Author: gdematta <gdematta@mines.edu>
+Date:   Thu Feb 6 18:37:23 2025 -0700
+
+    Fixing moving classes
+
+commit c485220292e6d3fcd738d4932430a24f9fa20e41
+Author: gdematta <103614648+gdematta@users.noreply.github.com>
+Date:   Thu Feb 6 15:09:21 2025 -0700
+
+    Create README.md
+
+commit 333b9586a69c46d56f0531b1d62251e38769c038
+Author: sgroth88 <sgroth@mines.edu>
+Date:   Thu Feb 6 15:00:38 2025 -0700
+
+    Update Fish.java
+
+commit b71ad7755673b91654115796ef7b5fd8a9b4b9cc
+Merge: 18496c7 41768b5
+Author: gdematta <gdematta@mines.edu>
+Date:   Thu Feb 6 14:29:53 2025 -0700
+
+    Merge branch 'master' of https://github.com/gdematta/C07
+
+commit 18496c74d6fdaa1d7b788baf557516c3f73b1d05
+Author: capit <capit@Gabe-LAPTOP2>
+Date:   Thu Feb 6 14:22:38 2025 -0700
+
+    Updated Shark
+
+commit 41768b51a3db086e055a0353fecc6ee2348f015a
+Author: sgroth88 <sgroth@mines.edu>
+Date:   Thu Feb 6 14:22:36 2025 -0700
+
+    Update Fish.java
+
+commit 7dc04635c34af37beab48f1af0ca72d16047a4db
+Author: capit <capit@Gabe-LAPTOP2>
+Date:   Thu Feb 6 13:53:26 2025 -0700
+
+    Updated Code 2-6
+    Added and started coding moving pieces
+
+commit 61d55080a6c0f7a1be7fa2a32e4b6bbb069824ee
+Author: gdematta <gdematta@mines.edu>
+Date:   Wed Feb 5 22:48:04 2025 -0700
+
+    First update
+    
+    Added-
+    Coin
+    Coral
+    Jellyfish
+    SeaMine
+    Whirlpool
+    
+    Updated-
+    LevelSetup
+    GamePiece
+    Player/Game Engine for the Whirlpool class
+
+commit 2c00ab912d1eef05c4a3e4c204cdcdc934b20cdb
+Author: gdematta <gdematta@mines.edu>
+Date:   Wed Feb 5 17:53:44 2025 -0700
+
+    Initial Commit

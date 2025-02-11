@@ -1,4 +1,4 @@
-
+Authors: Gabe De Matte, Spencer Groth
 
 Implements Drawable (no interaction and not actually a game piece, so doesn't extend GamePiece)
 Coral- Coral does not move and does not interact with the player
