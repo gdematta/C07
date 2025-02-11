@@ -216,6 +216,14 @@ public class Player implements Drawable {
 		return location;
 	}
 
+	public int getLevelPoints() {
+		return levelPoints;
+	}
+
+	public int getDamagePoints() {
+		return damagePoints;
+	}
+
 	/**
 	 * **** Interface methods ***
 	 * 
